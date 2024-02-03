@@ -1,0 +1,14 @@
+/* With the help of ids we give in html, we can specify new styles with these selectors. */
+
+button {
+    background-color: orange;
+}
+
+#login_mask {
+    font-size: 15px;
+    font-family: Consolas monospace;
+}
+
+#login {
+    background-color: cyan;
+}

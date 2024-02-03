@@ -1,0 +1,22 @@
+h1 {
+    background-color: aquamarine;
+    display: inline;
+    /* h1 is normally a block level element but we can make it inline */
+}
+
+span {
+    background-color: blueviolet;
+    width: 130px;
+    display: block;
+    /* span is normally an inline element but we can make it a block */
+}
+
+div {
+    background-color: greenyellow;
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    border: 3px solid black;
+    display: inline-block; /* the divs would normally stay one after another with no empty lines but now they are staying differently */
+    margin: 25px;
+}
