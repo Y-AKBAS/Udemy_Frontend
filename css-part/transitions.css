@@ -1,0 +1,24 @@
+/* we timing functions we can do these transitions way cooler*/
+.circle1 {
+    width: 300px;
+    height: 300px;
+    background-color: magenta;
+    transition: 0.5s;
+}
+
+.circle1:hover {
+    background-color: cyan;
+    border-radius: 50%;
+}
+
+.circle2 {
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+    transition: background-color 3s 0.5s;
+}
+
+.circle2:hover {
+    background-color: chocolate;
+    border-radius: 50%;
+}
