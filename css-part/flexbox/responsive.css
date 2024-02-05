@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #ecf39e;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #ecf39e;
+    display: flex;
+    flex-direction: row;
+    /* row is the already default one */
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; -> wraps the content and makes it fit in the box */
+    align-items: flex-start;
+    align-content: space-between;
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    flex-basis: 200px;
+    /*makes the items bigger column or row wise and overrides the defined width or height above */
+}
+
+div:nth-of-type(3) {
+    align-self: flex-end;
+}
+
+div:nth-of-type(1) {
+    flex-grow: 1;
+    /* takes up all the avaliable space */
+}
+
+/* we also have a flex: keyword shorthand for all the flex-grow, flex-shrink and flex-basis */
