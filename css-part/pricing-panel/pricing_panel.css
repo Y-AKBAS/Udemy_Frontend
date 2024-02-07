@@ -90,7 +90,7 @@ body {
 }
 
 .pricing-button.is-featured:hover,
-.pricing-button.is-featured: {
+.pricing-button.is-featured:focus {
     background-color: #269aff;
     color: white;
 }
