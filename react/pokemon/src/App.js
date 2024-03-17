@@ -1,13 +1,12 @@
 import './App.css';
+import RandomPokemon from "./RandomPokemeon";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        Hi There!
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <RandomPokemon/>
+        </div>
+    );
 }
 
 export default App;

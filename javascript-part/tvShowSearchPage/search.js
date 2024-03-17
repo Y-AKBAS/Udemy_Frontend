@@ -11,8 +11,7 @@ const searchFor = async (searchTerm) => {
     const url = `http://api.tvmaze.com/search/shows?q=${searchTerm}`
     console.log(url);
     const response = await fetch(url)
-    const body = await response.json();
-    return body;
+    return await response.json();
 };
 
 const addImages = (shows) => {
