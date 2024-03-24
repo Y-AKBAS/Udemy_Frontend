@@ -4,6 +4,10 @@ import ShoppingList from "./ShoppingList";
 import PropertyList from "./PropertyList";
 import Clicker from "./Clicker";
 import Toggler from "./Toggler";
+import ColorBox from "./ColorBox";
+import ColorBoxGrid from "./ColorBoxGrid";
+import EmojiClicker from "./EmojiClicker";
+import ScoreKeeper from "./ScoreKeeper";
 
 // react needs unique identifiers(key) to keep track of things in lists etc.
 // when we do not provide them, they are still getting rendered though.
@@ -23,11 +27,19 @@ const rentalProperties = [
     {id: 1234, name: "Oceanview Condo", rating: 4.7, price: 140},
 ];
 
+const colors = [
+    'red', 'green', 'blue', 'orange', 'magenta', 'purple', 'yellow', 'black'
+]
+
 function App() {
     return (
-        <div className="App">
-            <Toggler/>
+        <div>
+            <ScoreKeeper numOfPlayers={8} winningScore={3}/>
             {/*
+            <EmojiClicker/>
+            <ColorBoxGrid colorList={colors}/>
+            <ColorBox colorList={colors}/>
+            <Toggler/>
             <Clicker/>
             <PropertyList properties={rentalProperties}/>
             <ShoppingList items={shoppingList}/>
